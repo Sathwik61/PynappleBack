@@ -15,11 +15,10 @@ app.use(bodyParser.json());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use(cors(
-    {
-        origin: '*',
-    }
-))
+app.use(cors({
+    origin: "https://pynapple-front.vercel.app",
+    credentials: true
+  }));
 app.use('/api/v1', routes);
 app.get('/gh',(req,res)=>{
     res.send("dfjgdgf")
