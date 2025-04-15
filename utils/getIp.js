@@ -7,7 +7,7 @@ function getIp(req,res,next){
     }
   
     req.ipAddress = ipAddress;
-    console.log(ipAddress); // Log the IP address for debugging
+    // console.log(ipAddress); // Log the IP address for debugging
     next();
 }
 module.exports=getIp

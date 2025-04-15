@@ -27,7 +27,7 @@ const tuploadImage = async (request, response) => {
       expiry: expiry,
     };
 
-    const temporaryLink = `http://localhost:${process.env.PORT}/api/v1/tfile/${token}`;
+    const temporaryLink = `https://pynappleback-cqhadqg8cgb8fugf.canadacentral-01.azurewebsites.net/api/v1/tfile/${token}`;
     response.status(200).json({ path: temporaryLink });
   } catch (error) {
     console.error(error.message);

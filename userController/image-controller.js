@@ -22,7 +22,7 @@ const uploadImage = async (request, response) => {
         // console.log(file);
         
 
-        response.status(200).json({ path: `http://localhost:${process.env.PORT}/api/v1/file/${file._id}` });
+        response.status(200).json({ path: `https://pynappleback-cqhadqg8cgb8fugf.canadacentral-01.azurewebsites.net/api/v1/file/${file._id}` });
     } catch (error) {
         console.error(error.message);
         response.status(500).json({ error: error.message });

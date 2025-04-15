@@ -7,7 +7,7 @@ try{
     // console.log(req.body)
     const files = await File.find({user:uid});
     count++;
-    console.log("called getlinks",count)
+    // console.log("called getlinks",count)
            
     return res.status(200).json({'links':files})
 }
