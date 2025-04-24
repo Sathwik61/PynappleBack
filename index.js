@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(cors({
-    origin: "https://pynapple-front.vercel.app",
+    origin: "*",
     credentials: true
   }));
 app.use('/api/v1', routes);
