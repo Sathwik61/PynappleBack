@@ -8,7 +8,9 @@ const routes = express.Router();
 const {tuploadImage, tgetImage,tdownloadFile}= require('../userController/a.js')
 
 
-
+routes.get('/test', (req, res) => {
+    res.status(200).json({ message: 'API is working' });
+})
 routes.post('/register', userRegisterValidate ,registerUser);
 // routes.post('/register' ,registerUser);
 
